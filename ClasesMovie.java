@@ -3,6 +3,7 @@ public class ClasesMovie {
     String genero;
     int duracion;
 
+    // Puedes tener mas de un construnctor pero sin tener los mismos argumentos
     public ClasesMovie(String title, String genero, int duracion) {
         this.title = title;
         this.genero = genero;
@@ -10,6 +11,13 @@ public class ClasesMovie {
 
     }
 
+    public ClasesMovie(String title, int duracion) {
+        this.title = title;
+        this.duracion = duracion;
+
+    }
+
+    // Geters and Seters
     public String getTitle() {
         return title;
     }

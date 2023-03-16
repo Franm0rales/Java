@@ -6,14 +6,14 @@ public class Metodos {
         // ClasesMovie es una clase
 
         ClasesMovie toyStory = new ClasesMovie("Toy Story", "Familiar", 90);
+        ClasesMovie StarWars = new ClasesMovie("Star Wars", 120);
         // Objetos de la clase
         toyStory.setTitle("Toy Story");
-        ;
         toyStory.setGenero("Infantil");
-        ;
         toyStory.setDuracion(90);
 
-        System.out.println(toyStory.getTitle() + " " + toyStory.getGenero());
+        System.out.println(toyStory.getTitle() + " " + toyStory.getGenero() + " " + toyStory.getDuracion());
+        System.out.println(StarWars.getTitle() + " " + StarWars.getDuracion());
 
         String[] titleArray = new String[] { "La naranja mecanica", " Buscando a Nemo", "Mision Imposible", "Star Wars",
                 "Troya", " Yo Robot", " Ip Man" };
