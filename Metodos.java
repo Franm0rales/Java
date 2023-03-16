@@ -6,9 +6,11 @@ public class Metodos {
         // ClasesMovie es una clase
         ClasesMovie toyStory = new ClasesMovie();
         // Objetos de la clase
-        toyStory.title = "ToyStory";
-        toyStory.genero = "Infantil";
-        toyStory.duracion = 90;
+        toyStory.setTitle("Toy Story");
+        ;
+        toyStory.setGenero("Infantil");
+        ;
+        toyStory.setDuracion(90);
 
         System.out.println(toyStory.getTitle() + " " + toyStory.getGenero());
 
