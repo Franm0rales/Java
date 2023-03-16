@@ -2,23 +2,23 @@ import java.util.Scanner;
 
 public class Cinebox {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int totalEpisod = 15;
-        int totalsession = scanner.nextInt();
-        if (totalEpisod > 1 || totalsession > 1) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int totalEpisod = 15;
+            int totalsession = scanner.nextInt();
+            if (totalEpisod > 1 || totalsession > 1) {
 
-            if (totalsession <= 10) {
-                System.out.println("Es una miniserie");
+                if (totalsession <= 10) {
+                    System.out.println("Es una miniserie");
+                } else {
+                    System.out.println("Es una serie");
+                }
+            } else if (totalEpisod == 1) {
+                System.out.println("Es una pelicula");
             } else {
-                System.out.println("Es una serie");
+
+                System.out.println("Debe tener al menos un episodio");
             }
-        } else if (totalEpisod == 1) {
-            System.out.println("Es una pelicula");
-        } else {
-
-            System.out.println("Debe tener al menos un episodio");
         }
-
         int i = 0;
         int duration = 10;
         while (i <= duration) {
