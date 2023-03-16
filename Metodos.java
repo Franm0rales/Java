@@ -10,7 +10,7 @@ public class Metodos {
         toyStory.genero = "Infantil";
         toyStory.duracion = 90;
 
-        System.out.println(toyStory.title);
+        System.out.println(toyStory.getTitle() + " " + toyStory.getGenero());
 
         String[] titleArray = new String[] { "La naranja mecanica", " Buscando a Nemo", "Mision Imposible", "Star Wars",
                 "Troya", " Yo Robot", " Ip Man" };
