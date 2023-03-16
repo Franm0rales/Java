@@ -1,10 +1,15 @@
+import java.util.Random;
+
+//Puedes crear metodos con el mismo nombre pero diferentes argumentos
 public class Metodos {
     public static void main(String[] args) {
         String[] titleArray = new String[] { "La naranja mecanica", " Buscando a Nemo", "Mision Imposible", "Star Wars",
                 "Troya", " Yo Robot", " Ip Man" };
 
         String title = playMovie(titleArray, 1);
+        String title2 = playMovie(titleArray);
         pauseMovie(title);
+        pauseMovie(title2);
     }
 
     public static String playMovie(String[] titleArray, int index) {
@@ -22,6 +27,18 @@ public class Metodos {
             System.out.println("Index es muy grande...");
             return "";
         }
+
+    }
+
+    public static String playMovie(String[] titleArray) {
+        Random random = new Random();
+        int index = random.nextInt(titleArray.length - 1);
+        String title = titleArray[index];
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Playing movie: " + title);
+        }
+        return title;
 
     }
 
