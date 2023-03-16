@@ -4,7 +4,8 @@ import java.util.Random;
 public class Metodos {
     public static void main(String[] args) {
         // ClasesMovie es una clase
-        ClasesMovie toyStory = new ClasesMovie();
+
+        ClasesMovie toyStory = new ClasesMovie("Toy Story", "Familiar", 90);
         // Objetos de la clase
         toyStory.setTitle("Toy Story");
         ;

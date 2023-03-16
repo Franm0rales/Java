@@ -3,6 +3,13 @@ public class ClasesMovie {
     String genero;
     int duracion;
 
+    public ClasesMovie(String title, String genero, int duracion) {
+        this.title = title;
+        this.genero = genero;
+        this.duracion = duracion;
+
+    }
+
     public String getTitle() {
         return title;
     }
