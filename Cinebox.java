@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class Cinebox {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         int totalEpisod = 15;
-        int totalsession = 4;
+        int totalsession = scanner.nextInt();
         if (totalEpisod > 1 || totalsession > 1) {
 
-            if (totalsession >= 10) {
+            if (totalsession <= 10) {
                 System.out.println("Es una miniserie");
             } else {
                 System.out.println("Es una serie");
