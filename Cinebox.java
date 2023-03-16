@@ -41,6 +41,17 @@ public class Cinebox {
             }
 
         }
-
+        int a = 15;
+        do {
+            if (a < 3) {
+                System.out.println("Reproduciendo intro " + a);
+            } else if (a < 7) {
+                System.out.println("Reproduciendo pelicula " + a);
+            } else {
+                System.out.println("Reproduciendo creditos " + a);
+            }
+            a++;
+        } while (a <= duration);
     }
+
 }
