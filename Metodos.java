@@ -3,6 +3,15 @@ import java.util.Random;
 //Puedes crear metodos con el mismo nombre pero diferentes argumentos
 public class Metodos {
     public static void main(String[] args) {
+        // ClasesMovie es una clase
+        ClasesMovie toyStory = new ClasesMovie();
+        // Objetos de la clase
+        toyStory.title = "ToyStory";
+        toyStory.genero = "Infantil";
+        toyStory.duracion = 90;
+
+        System.out.println(toyStory.title);
+
         String[] titleArray = new String[] { "La naranja mecanica", " Buscando a Nemo", "Mision Imposible", "Star Wars",
                 "Troya", " Yo Robot", " Ip Man" };
 
