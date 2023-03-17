@@ -14,6 +14,8 @@ public class Metodos {
 
         System.out.println(toyStory.getTitle() + " " + toyStory.getGenero() + " " + toyStory.getDuracion());
         System.out.println(StarWars.getTitle() + " " + StarWars.getDuracion());
+        // toString
+        System.out.println(toyStory);
 
         String[] titleArray = new String[] { "La naranja mecanica", " Buscando a Nemo", "Mision Imposible", "Star Wars",
                 "Troya", " Yo Robot", " Ip Man" };
@@ -62,4 +64,5 @@ public class Metodos {
         }
 
     }
+
 }
