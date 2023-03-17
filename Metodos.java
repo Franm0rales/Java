@@ -3,6 +3,24 @@ import java.util.Random;
 //Puedes crear metodos con el mismo nombre pero diferentes argumentos
 public class Metodos {
     public static void main(String[] args) {
+
+        Movie backToTheFuture = new Movie();
+
+        backToTheFuture.setTitle("backToTheFuture");
+        backToTheFuture.setGenero("Science Fiction");
+        backToTheFuture.setWonOscar(true);
+
+        ClaseSerie breakingBad = new ClaseSerie();
+
+        breakingBad.setTitle("breakingBad");
+        breakingBad.setGenero("Drama and drugs");
+        breakingBad.setEpidoseDuration(50);
+        breakingBad.setTotalEpisodes(12);
+        breakingBad.setTotalSeasons(5);
+
+        System.out.println(backToTheFuture.toString());
+        System.out.println(breakingBad.toString());
+
         // ClasesMovie es una clase
 
         ClasesMovie toyStory = new ClasesMovie("Toy Story", "Familiar", 90);
